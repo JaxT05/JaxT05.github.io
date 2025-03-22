@@ -1,0 +1,88 @@
+@font-face {
+    src:"https://fonts.googleapis.com/css2?family=Inter:ital";
+    font-family: "Inter", sans-serif;
+  font-weight: 500px;
+  font-style: normal;
+}
+h1{
+    font-weight: 700px;
+}
+body{
+    background-color:black;
+    color: #fefdfd;
+    font-family: "Inter", sans-serif;
+    margin: auto;
+}
+
+header{
+    background-color: #9443b2;
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+header h1{
+    font-size: 1.5rem;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header li{
+    padding-inline: 1rem;
+
+}
+a{
+    color: #fefdfd;
+}
+.about-me-section{
+    margin:auto;
+    padding: 5rem;
+}
+.portfolio-container{
+    padding: 5rem;
+    
+}
+.portfolio-container h1{
+    margin:auto;
+}
+.portfolio-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem; 
+    width: 50rem;
+
+}
+.project-info img {
+    height: 20rem;
+    padding: 1rem;
+
+}
+.img-container{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    
+    padding: 0.1rem;
+}
+footer ul{
+    padding: 2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+ul{
+    list-style-type: none;
+}

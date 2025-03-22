@@ -46,6 +46,10 @@ a{
     margin:auto;
     padding: 5rem;
 }
+.about-me-section h1{
+    font-size: 3.5rem;
+    text-shadow: #fefdfd38 1px 3px;
+}
 .portfolio-container{
     margin:auto;
     padding: 5rem;
@@ -72,6 +76,7 @@ a{
 .project-info img {
     height: 20rem;
     padding: 1.5rem;
+    object-fit: contain;
 
 }
 .img-container{
@@ -94,4 +99,19 @@ footer ul{
 
 ul{
     list-style-type: none;
+}
+
+@media(max-width: 600px){
+    .project-info{
+        flex-direction: column;
+        max-width: 20rem;
+    }
+    .img-container{
+        flex-direction: column;
+    }
+    .img-container image{
+        width: 5rem;
+
+    }
+
 }

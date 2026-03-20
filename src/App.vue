@@ -7,6 +7,7 @@
     <div class="page-links">
       <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/portfolio">Projects</RouterLink>  
+    <RouterLink to="/resume">Resume</RouterLink>
     </div>
   </nav>
   <main>
@@ -25,7 +26,8 @@ nav {
   text-transform: uppercase;
   padding: 1rem 2rem;
   font-weight: 800;
-  background: linear-gradient(rgba(255, 255, 255, 0.159), transparent)
+  background: linear-gradient(rgba(255, 255, 255, 0.159), transparent);
+  z-index: 1001;
 }
 nav .page-links {
   display: flex;

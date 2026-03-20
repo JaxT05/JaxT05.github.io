@@ -4,7 +4,7 @@ export const projects = reactive({
     webProjects:  [
         {
             projectName: "Clear Skies Indy",
-            projectImages: ["/src/assets/projectImages/clear-skies-indy.png"],
+            projectImages: ["/assets/projectImages/clear-skies-indy.png"],
             technologies: "ReactJS, Spring Boot",
             shortDescription: "A website that displays the realtime Air Quality Index data of a selected location on an interactive map. This project was completed within 36 hours for NASA's 2025 Space Apps Challenge.",
             longDescription: "",
@@ -20,9 +20,9 @@ export const projects = reactive({
         },
         {
             projectName: "The College of Fine Arts Annual Art Show Showcase",
-            projectImages: ["", "", ""],
+            projectImages: ["/assets/projectImages/art-show1.png", "/assets/projectImages/art-show2.png", "/assets/projectImages/art-show3.png"],
             technologies: "WordPress, PHP",
-            shortDescription: "",
+            shortDescription: "A website that hosts the annual College of Fine Arts Art Show, allowing for students to submit their work through a form and for a juror to review all artworks through a dashboard.",
             longDescription: "",
         }, 
         {

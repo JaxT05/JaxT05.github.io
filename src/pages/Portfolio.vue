@@ -14,6 +14,9 @@ import Project from "../components/Project.vue";
 </template>
 
 <style scoped>
+main {
+    margin: 3rem 0;
+}
 .portfolio-container {
     display: flex;
     flex-direction: column;

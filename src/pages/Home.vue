@@ -2,13 +2,15 @@
 import { projects } from "../projectData";
 import MiscProject from "../components/MiscProject.vue";
 import Carousel from "primevue/carousel";
+
+
 </script>
 
 <template>
     <main>
         <h1>Hello, I'm Jax!</h1>
     <p>I'm a software developer specializing in Web Development, Cybersecurity, and Information Technology.
-        Most of my projects are web-centric, although <a href="#other-projects"><em>I love branching out and learning other things related to development</em></a>
+        Most of my projects are web-centric, although I love branching out and <a href="#other-projects"><em>learning other things related to development</em></a>
     </p>
     
     <h2>Where to Find Me</h2>
@@ -18,7 +20,7 @@ import Carousel from "primevue/carousel";
         <a href=""><button class="btn">LinkedIn</button></a>
     </div>
     <h2 class="smaller-homepage-header">Recent Web and App Projects</h2>
-    <Carousel :value="projects.webProjects" :numVisible="1" :numScroll="1" circular :autoplay-interval="10000">
+    <Carousel :value="projects.webProjects.slice(0, 3)" :numVisible="1" :numScroll="1" circular :autoplay-interval="10000">
     <template #item="slotProps">
                 <div>
                     <div>

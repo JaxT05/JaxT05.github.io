@@ -4,6 +4,8 @@ import PortfolioView from "./pages/Portfolio.vue";
 
 
 export const router = createRouter({
+    linkActiveClass: 'border-indigo-500',
+    linkExactActiveClass: 'border-indigo-700',
     history: createWebHistory(),
     routes: [ 
         { path: "/", component: HomeView },

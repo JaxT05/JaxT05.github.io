@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 export default {
     props: {
         project: {
@@ -59,9 +59,4 @@ export default {
         font-size: 1.5rem;
     }
 }
-@media (max-width: 860px) {
-    .project-container {
-        }
-    }
-
 </style>

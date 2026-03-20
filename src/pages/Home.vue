@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { projects } from "../projectData";
-import Project from "../components/Project.vue";
 import MiscProject from "../components/MiscProject.vue";
 import Carousel from "primevue/carousel";
 </script>

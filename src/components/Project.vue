@@ -12,10 +12,13 @@ export default {
 <template>
     <div class="project-container project-container-styles">
         <div>
-            <img class="thumbnail-image" :src="project.projectImages[0]"/>
+            <img v-if="project.projectImages" class="thumbnail-image" :src="project.projectImages[0]"/>
+            <div v-else class="placeholder-image">
+                <p>No image available.</p>
+            </div>
         </div>
         <div class="project-information">
-            <h3>{{ project.projectName }}</h3>
+            <h3 :id=project.projectId>{{ project.projectName }}</h3>
             <p> {{ project.shortDescription }}</p>
             <p v-if="project.technologies"> <strong>Built with:</strong> {{ project.technologies }}</p>
             <div class="button-container">
@@ -25,6 +28,12 @@ export default {
                 <a v-if="project.githubUrl" :href=project.githubUrl target="_blank">
                     <button class="btn">GitHub</button>
                 </a>
+                <a v-if="project.designUrl" :href=project.designUrl target="_blank">
+                    <button class="btn">Design File</button>
+                </a>
+                <RouterLink :to="{ path:`/project/${project.projectId}`,}">
+                            <button class="btn">More Info</button>
+                        </RouterLink>
             </div>
         </div>
     </div>
@@ -51,11 +60,22 @@ export default {
     gap: 3rem;
 }
 .thumbnail-image {
-     width: 30em;
+    width: 30em;
     height: 18rem;
     object-fit: cover;
     object-position: 10% 0%;
     border-radius: 10px;
+}
+.placeholder-image {
+    width: 30em;
+    height: 18rem;
+    position: relative;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 .project-information {
     width: 50%;

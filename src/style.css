@@ -51,6 +51,9 @@ button {
     border: 1px solid white;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.093);
   }
+  .big-button {
+    margin-top: 2rem;
+  }
 
   a:hover .btn {
     border: 1px solid rgb(119, 42, 206);
@@ -78,17 +81,4 @@ button {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

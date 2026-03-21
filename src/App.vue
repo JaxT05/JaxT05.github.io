@@ -7,7 +7,7 @@
     <div class="page-links">
       <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/portfolio">Projects</RouterLink>  
-    <RouterLink to="/resume">Resume</RouterLink>
+    <a href="/assets/jax-tobyas-resume.pdf">Resume</a>
     </div>
   </nav>
   <main>
